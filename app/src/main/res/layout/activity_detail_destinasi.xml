@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetailDestinasiActivity">
+
+    <ImageView
+        android:id="@+id/openDetailActivity1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/wisata1"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/openDetailActivity2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/wisata2"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/openDetailActivity3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/wisata3"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/openDetailActivity4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/wisata4"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

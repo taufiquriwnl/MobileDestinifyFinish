@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/secondary">
+
+    <ImageView
+        android:id="@+id/L_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/gambar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/frame1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        tools:layout_editor_absoluteX="-15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:labelFor="@+id/tombolkembali"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Tour Guide Page"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_view_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        app:queryHint="Search"
+        app:iconifiedByDefault="false" />
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:background="@drawable/tourguide_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303">
+
+        <ImageView
+            android:labelFor="@+id/guider1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foto1"/>
+
+        <TextView
+            android:id="@+id/namaguider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Resti Kirana"
+            android:textColor="#008080"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/jasaguider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Rp. 60.000"
+            android:textColor="#FF0000"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iconlokasiguider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="165dp"
+            android:src="@drawable/iconlocation"/>
+
+        <ImageView
+            android:id="@+id/ratingguider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/iconstar"/>
+
+        <TextView
+            android:id="@+id/lokasiguider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jakarta Pusat"
+            android:textColor="#808080"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/buttonguider1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/secondary"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Detail"
+            android:textSize="11sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:background="@drawable/tourguide_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303">
+
+        <ImageView
+            android:labelFor="@+id/guider2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foto2"/>
+
+        <TextView
+            android:id="@+id/namaguider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Assyfia Ayunda"
+            android:textColor="#008080"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/jasaguider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Rp. 50.000"
+            android:textColor="#FF0000"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iconlokasiguider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="165dp"
+            android:src="@drawable/iconlocation"/>
+
+        <ImageView
+            android:id="@+id/ratingguider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/iconstar"/>
+
+        <TextView
+            android:id="@+id/lokasiguider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jakarta Pusat"
+            android:textColor="#808080"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/buttonguider2"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/secondary"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Detail"
+            android:textSize="11sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:background="@drawable/tourguide_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
+        <ImageView
+            android:labelFor="@+id/guider3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foto3"/>
+
+        <TextView
+            android:id="@+id/namaguider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Susie Wolf"
+            android:textColor="#008080"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/jasaguider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Rp. 90.000"
+            android:textColor="#FF0000"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iconlokasiguider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/iconlocation"/>
+
+        <ImageView
+            android:id="@+id/ratingguider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="197dp"
+            android:src="@drawable/iconstar"/>
+
+        <TextView
+            android:id="@+id/lokasiguider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jakarta Pusat"
+            android:textColor="#808080"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/buttonguider3"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/secondary"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Detail"
+            android:textSize="11sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:background="@drawable/tourguide_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
+        <ImageView
+            android:labelFor="@+id/guider4"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foto5"/>
+
+        <TextView
+            android:id="@+id/namaguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Suryono"
+            android:textColor="#008080"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/jasaguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Rp. 40.000"
+            android:textColor="#FF0000"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iconlokasiguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/iconlocation"/>
+
+        <ImageView
+            android:id="@+id/ratingguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="197dp"
+            android:src="@drawable/iconstar"/>
+
+        <TextView
+            android:id="@+id/lokasiguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jakarta Pusat"
+            android:textColor="#808080"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/buttonguider4"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/secondary"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Detail"
+            android:textSize="11sp"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

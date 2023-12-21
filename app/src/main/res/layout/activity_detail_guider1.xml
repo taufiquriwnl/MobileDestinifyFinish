@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/guider2_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/foto1"
+        android:scaleType="centerCrop"/>
+
+    <!-- GridLayout untuk elemen-elemen lain -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guider2_detail_image"
+        android:layout_marginTop="-20dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_top_rounded_loginpage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="463dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/guider2_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="Resti Kirana"
+                android:textColor="@color/secondary"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/guider2_detail_rating"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/iconstar" />
+
+            <!-- Teks dengan warna merah -->
+            <TextView
+                android:id="@+id/guider2_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Rp. 50.000"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+
+            <!-- Bagian yang ingin dibungkus dengan background -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_custom"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/guider2_detail_price">
+
+                <TextView
+                    android:id="@+id/guider2_detail_profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="Travel"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/guider2_detail_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="restikirana@gmail.com"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <!-- Informasi tambahan -->
+                <TextView
+                    android:id="@+id/guider2_detail_languages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="Languages: Bahasa, English, Spanish"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/guider2_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Jl Jakarta Pusat no 69"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Tombol horizontal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/button_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Contact"
+                    android:backgroundTint="@color/secondary"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:id="@+id/button_pesan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PESAN"
+                    android:backgroundTint="@color/secondary"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </GridLayout>
+</RelativeLayout>
